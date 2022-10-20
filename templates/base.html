@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Фільми</h2>
+    <form action="" method="POST">
+        <input type="text" name="movie title" placeholder="Назва фільму">
+        <input type="text" name="director" placeholder="Режисер">
+        <input type="text" name="film genre" placeholder="Жанр фільму">
+        <input type="number" name="duration" placeholder="Тривалість">
+        <input type="number" name="graduation_year" placeholder="Рік випуску">
+        <button>Створити</button>
+    </form>
+    {% for film in films %}
+        <p>{{ film }}</p>
+    {% endfor %}
+</body>
+</html>
